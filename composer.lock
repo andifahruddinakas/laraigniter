@@ -4,23 +4,18 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21fa75ddac19cf790dce019598e39f34",
+    "content-hash": "f6fa9f06e838e8fe50d26716070b2aed",
     "packages": [
         {
             "name": "akas/laravel-bridge",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/andifahruddinakas/laravel-bridge.git",
-                "reference": "1a95af05e87563b39977ef8104f2d48904028735"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/andifahruddinakas/laravel-bridge/zipball/1a95af05e87563b39977ef8104f2d48904028735",
-                "reference": "1a95af05e87563b39977ef8104f2d48904028735",
-                "shasum": ""
+                "type": "path",
+                "url": "D:/PROJECT OPENDESA/laravel-bridge",
+                "reference": "6fc4673254fe9840a32f6335ccdb48507df42f25"
             },
             "require": {
+                "illuminate/session": "^8.0",
                 "laravel/lumen-framework": "^8.0",
                 "php": ">=7.4",
                 "rappasoft/laravel-helpers": "^2.1"
@@ -34,7 +29,11 @@
                     "Akas\\Bridge\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -57,10 +56,9 @@
                 "web",
                 "web artisan"
             ],
-            "support": {
-                "source": "https://github.com/andifahruddinakas/laravel-bridge/tree/v2.0.2"
-            },
-            "time": "2024-01-02T07:39:30+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "brick/math",
@@ -5286,7 +5284,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "akas/laravel-bridge": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

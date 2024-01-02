@@ -25,12 +25,12 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
-        // dd(app());
+        // dd(app('session'));
         // dd(app()->version());
         // // log
         // info('test info');
         // // session()->put('akas', 'aaaaaaaaaa');
-        // session()->flash('akas', 'aaaaaaaaaa');
+        session()->flash('akas', 'aaaaaaaaaa');
         dd(session()->all());
         // // dd(config('app'));
         
