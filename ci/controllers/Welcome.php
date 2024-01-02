@@ -25,22 +25,22 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
-        dd(app('db'));
+        // dd(app());
         // dd(app()->version());
         // // log
         // info('test info');
         // // session()->put('akas', 'aaaaaaaaaa');
         // session()->flash('akas', 'aaaaaaaaaa');
-        // dd(session()->all());
+        dd(session()->all());
         // // dd(config('app'));
         
         // // // dd(app());
-        // // $akas = encrypt('ini akas');
+        $akas = encrypt('ini akas');
 
-        // // dd([
-        // //     'akas' => $akas,
-        // //     'decrypt' => decrypt($akas),
-        // // ]);
+        dd([
+            'akas' => $akas,
+            'decrypt' => decrypt($akas),
+        ]);
         // // dd(app('cache'));
         dd(User::get()->toArray());
         // dd(DB::table('users')->get()->toArray());

@@ -4,31 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6fa9f06e838e8fe50d26716070b2aed",
+    "content-hash": "21fa75ddac19cf790dce019598e39f34",
     "packages": [
         {
             "name": "akas/laravel-bridge",
-            "version": "dev-master",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andifahruddinakas/laravel-bridge.git",
+                "reference": "1a95af05e87563b39977ef8104f2d48904028735"
+            },
             "dist": {
-                "type": "path",
-                "url": "D:/PROJECT OPENDESA/laravel-bridge",
-                "reference": "3147e67eed4046172dda693869f9cee8fea6c564"
+                "type": "zip",
+                "url": "https://api.github.com/repos/andifahruddinakas/laravel-bridge/zipball/1a95af05e87563b39977ef8104f2d48904028735",
+                "reference": "1a95af05e87563b39977ef8104f2d48904028735",
+                "shasum": ""
             },
             "require": {
                 "laravel/lumen-framework": "^8.0",
-                "php": ">=7.4"
+                "php": ">=7.4",
+                "rappasoft/laravel-helpers": "^2.1"
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
-                    "Akas\\LaravelBridge\\": "src"
+                    "Akas\\Bridge\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -51,9 +57,10 @@
                 "web",
                 "web artisan"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "source": "https://github.com/andifahruddinakas/laravel-bridge/tree/v2.0.2"
+            },
+            "time": "2024-01-02T07:39:30+00:00"
         },
         {
             "name": "brick/math",
@@ -3011,6 +3018,55 @@
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
+            "name": "rappasoft/laravel-helpers",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rappasoft/laravel-helpers.git",
+                "reference": "044e2c1595f43d6e6d0a704a9813cef468c5df17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rappasoft/laravel-helpers/zipball/044e2c1595f43d6e6d0a704a9813cef468c5df17",
+                "reference": "044e2c1595f43d6e6d0a704a9813cef468c5df17",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/arrays.php",
+                    "src/classes.php",
+                    "src/helpers.php",
+                    "src/strings.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Rappa",
+                    "email": "rappa819@gmail.com"
+                }
+            ],
+            "description": "Laravel Helpers for Non-Laravel Projects",
+            "keywords": [
+                "String helpers",
+                "array helpers",
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/rappasoft/laravel-helpers/issues",
+                "source": "https://github.com/rappasoft/laravel-helpers/tree/v2.1.0"
+            },
+            "time": "2023-04-24T13:51:20+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v5.4.34",
             "source": {
@@ -5230,9 +5286,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "akas/laravel-bridge": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
