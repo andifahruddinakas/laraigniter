@@ -25,7 +25,7 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
-        // dd(app());
+        dd(app('db'));
         // dd(app()->version());
         // // log
         // info('test info');
@@ -42,6 +42,7 @@ class Welcome extends CI_Controller
         // //     'decrypt' => decrypt($akas),
         // // ]);
         // // dd(app('cache'));
+        dd(User::get()->toArray());
         // dd(DB::table('users')->get()->toArray());
         // cache()->flush();
         // $akas = cache()->remember('akas', 10000, function () {
